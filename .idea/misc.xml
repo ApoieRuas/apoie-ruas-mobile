@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout/activity_main.xml" value="0.27717391304347827" />
+        <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout/fragment_dashboard.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout/fragment_home.xml" value="0.27717391304347827" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout/fragment_notifications.xml" value="0.27717391304347827" />
+        <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout/tela_login.xml" value="0.2708333333333333" />
       </map>
     </option>
   </component>
