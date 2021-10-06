@@ -5,7 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".tela_loading">
+    tools:context=".splash_screen">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fundo_melhorado"
+        android:alpha="0.3"/>
 
     <RelativeLayout
         android:id="@+id/centralizar"

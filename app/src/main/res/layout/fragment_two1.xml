@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".One">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:id="@+id/name"
+        style="@style/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Digite Seu Nome Completo"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_user"
+        android:inputType="textEmailAddress"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+
+        />
+
+    <EditText
+        android:id="@+id/email"
+        style="@style/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="85dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Digite Seu E-mail"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:inputType="textEmailAddress"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+
+        />
+
+    <EditText
+        android:id="@+id/cpf"
+        style="@style/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="170dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Digite Seu CPF"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_note"
+        android:inputType="textEmailAddress"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+
+        />
+    <EditText
+        android:id="@+id/phone"
+        style="@style/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="255dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Digite Seu Telefone"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_phone"
+        android:inputType="textEmailAddress"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+
+        />
+
+
+    <EditText
+        android:id="@+id/password"
+        style="@style/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="340dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_key"
+        android:drawableRight="@drawable/ic_eye"
+        android:hint="Digite Sua Senha"
+        android:inputType="textPassword"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Botão_cadastrar"
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="440dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="25dp"
+        android:text="ENTRAR"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</FrameLayout>
+</ScrollView>

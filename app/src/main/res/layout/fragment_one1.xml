@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".One">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:id="@+id/username"
+        style="@style/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Digite Seu E-mail"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:inputType="textEmailAddress"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+
+        />
+
+    <EditText
+        android:id="@+id/password"
+        style="@style/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="85dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_key"
+        android:drawableRight="@drawable/ic_eye"
+        android:hint="Digite Sua Senha"
+        android:inputType="textPassword"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Botão_cadastrar"
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="185dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="ENTRAR"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="260dp"
+        android:text="@string/esqueceu_senha"
+        android:textSize="15dp"
+        android:textAlignment="center"/>
+
+</FrameLayout>
