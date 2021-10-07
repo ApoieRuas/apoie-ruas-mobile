@@ -39,4 +39,18 @@
         <item name="android:padding">12dp</item>
         <item name="android:background">@drawable/button</item>
     </style>
+
+    <style name="Theme.ApoieRuas.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ApoieRuas.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ApoieRuas.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+    <item name="fontFamily">@font/montserratsemibold</item>
+    <item name="android:textSize">12sp</item>
+    </style>
 </resources>
