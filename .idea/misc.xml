@@ -9,6 +9,7 @@
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/drawable/conteiner_components_entrar.xml" value="0.3828125" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/drawable/edit_text1.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.3402777777777778" />
+        <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/drawable/ic_baseline_arrow_forward_24.xml" value="0.19722222222222222" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.3402777777777778" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/drawable/ic_baseline_supervised_user_circle_24.xml" value="0.19722222222222222" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/drawable/ic_email.xml" value="0.22135416666666666" />
@@ -16,7 +17,9 @@
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/drawable/ic_iconmonstr_map_8.xml" value="0.19722222222222222" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/drawable/ic_key.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.19722222222222222" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.3356164383561644" />
+        <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/drawable/navbtn.xml" value="0.458984375" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/drawable/rect_back.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/drawable/selected_tab.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/drawable/tab_indicator.xml" value="0.19583333333333333" />
@@ -25,19 +28,23 @@
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/drawable/unselected_tab.xml" value="0.3828125" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout-land/tela_entrar.xml" value="0.31040564373897706" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout-large/tela_entrar.xml" value="0.18" />
-        <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout-normal/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout-normal/fragment_dashboard.xml" value="0.18287037037037038" />
+        <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout-normal/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout-normal/fragment_dashboard.xml" value="0.14332365747460088" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout-normal/fragment_home.xml" value="0.18287037037037038" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout-normal/fragment_notifications.xml" value="0.18287037037037038" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout-normal/tela_entrar.xml" value="0.25" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout-small/tela_entrar.xml" value="0.67" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout-sw320dp/tela_entrar.xml" value="0.33" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout-sw480dp/tela_entrar.xml" value="0.2520424836601307" />
+        <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout/abs.xml" value="0.18287037037037038" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout/activity_menu.xml" value="0.18287037037037038" />
+        <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout/app_bar_menu.xml" value="0.18287037037037038" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout/content_menu.xml" value="0.32592592592592595" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout/custom_tab.xml" value="0.1956521739130435" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout/fragment_dashboard.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout/fragment_fullscreen.xml" value="0.18287037037037038" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout/fragment_home.xml" value="0.27717391304347827" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout/fragment_mapa.xml" value="0.32592592592592595" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout/fragment_morador.xml" value="0.32592592592592595" />
@@ -48,6 +55,7 @@
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout/fragment_two.xml" value="0.27943840579710144" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout/fragment_two1.xml" value="0.25" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout/fragment_user.xml" value="0.32592592592592595" />
+        <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout/mapa_freguesia.xml" value="0.18287037037037038" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout/nav_header_menu.xml" value="0.32592592592592595" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout/splash_screen.xml" value="0.27943840579710144" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/layout/tela_entrar.xml" value="0.18" />
@@ -56,6 +64,7 @@
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/menu/bottom_nav_menu.xml" value="0.32592592592592595" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/menu/menu.xml" value="0.32592592592592595" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/menu/menu_bottom_nav.xml" value="0.32592592592592595" />
+        <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/menu/menu_lateral.xml" value="0.18287037037037038" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/menu/nav_menu.xml" value="0.18287037037037038" />
         <entry key="..\:/Users/josel/Desktop/EU/EQP2/MOBILE/apoie-ruas-mobile/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22135416666666666" />
       </map>

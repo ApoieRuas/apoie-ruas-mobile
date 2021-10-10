@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.ApoieRuas" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryDark">@color/black</item>
         <item name="colorAccent">@color/black</item>
         <!-- Customize your theme here. -->
@@ -45,12 +45,15 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.ApoieRuas.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="Theme.ApoieRuas.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
     <style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
-    <item name="fontFamily">@font/montserratsemibold</item>
-    <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/montserratsemibold</item>
+        <item name="android:textSize">12sp</item>
     </style>
+
+    <style name="ThemeOverlay.ApoieRuas.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
+
+
 </resources>

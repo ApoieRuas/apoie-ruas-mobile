@@ -27,8 +27,6 @@ public class tela_entrar extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         getSupportActionBar().hide();
 
-
-
         tabLayout = findViewById(R.id.tab_layout1);
         viewPager = findViewById(R.id.view_pager1);
 
