@@ -55,5 +55,7 @@
         <item name="fullscreenTextColor">@color/light_blue_A200</item>
     </style>
 
-
+    <style name="voltar">
+        <item name="android:background">@drawable/ic_baseline_arrow_back_24</item>
+    </style>
 </resources>
