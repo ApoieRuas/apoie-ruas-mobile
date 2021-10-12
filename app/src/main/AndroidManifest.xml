@@ -33,6 +33,45 @@
             android:exported="true"
             android:parentActivityName=".MainActivity"/>
 
+        <activity android:name=".mapa_ipiranga"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".mapa_itaquera"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".mapa_jacana"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".mapa_vilamariana"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".mapa_saomatheus"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".mapa_penha"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".mapa_pinheiros"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".mapa_santoamaro"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".mapa_tiradentes"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".mapa_vilamaria"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>

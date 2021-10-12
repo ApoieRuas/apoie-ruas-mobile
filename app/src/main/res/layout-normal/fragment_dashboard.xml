@@ -72,15 +72,13 @@
                         >
 
                         <RelativeLayout
-
-                            android:id="@+id/primeiro"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/darkred"
                             android:padding="10dp">
 
                             <androidx.appcompat.widget.AppCompatButton
-                                android:id="@+id/button"
+                                android:id="@+id/btnfreguesia"
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
@@ -154,7 +152,7 @@
                                 android:textStyle="bold" />
 
                             <androidx.appcompat.widget.AppCompatButton
-                                android:id="@+id/button2"
+                                android:id="@+id/btnipiranga"
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
@@ -212,7 +210,7 @@
                                 android:textStyle="bold" />
 
                             <androidx.appcompat.widget.AppCompatButton
-                                android:id="@+id/button3"
+                                android:id="@+id/btnitaquera"
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
@@ -270,7 +268,7 @@
                                 android:textStyle="bold" />
 
                             <androidx.appcompat.widget.AppCompatButton
-                                android:id="@+id/button4"
+                                android:id="@+id/btnjacana"
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
@@ -328,7 +326,7 @@
                                 android:textStyle="bold" />
 
                             <androidx.appcompat.widget.AppCompatButton
-                                android:id="@+id/button5"
+                                android:id="@+id/btnvilamariana"
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
@@ -386,7 +384,7 @@
                                 android:textStyle="bold" />
 
                             <androidx.appcompat.widget.AppCompatButton
-                                android:id="@+id/button6"
+                                android:id="@+id/btnsaomatheus"
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
@@ -444,7 +442,7 @@
                                 android:textStyle="bold" />
 
                             <androidx.appcompat.widget.AppCompatButton
-                                android:id="@+id/button7"
+                                android:id="@+id/btnpenha"
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
@@ -502,7 +500,7 @@
                                 android:textStyle="bold" />
 
                             <androidx.appcompat.widget.AppCompatButton
-                                android:id="@+id/button8"
+                                android:id="@+id/btnpinheiros"
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
@@ -560,7 +558,7 @@
                                 android:textStyle="bold" />
 
                             <androidx.appcompat.widget.AppCompatButton
-                                android:id="@+id/button9"
+                                android:id="@+id/btnsantoamaro"
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
@@ -618,7 +616,7 @@
                                 android:textStyle="bold" />
 
                             <androidx.appcompat.widget.AppCompatButton
-                                android:id="@+id/button10"
+                                android:id="@+id/btntiradentes"
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
@@ -677,7 +675,7 @@
                                 android:textStyle="bold" />
 
                             <androidx.appcompat.widget.AppCompatButton
-                                android:id="@+id/button11"
+                                android:id="@+id/btnvilamaria"
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"

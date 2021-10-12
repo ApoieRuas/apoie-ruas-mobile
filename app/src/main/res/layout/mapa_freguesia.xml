@@ -88,7 +88,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/montserrat_medium"
-                        android:text="Principas informações coletadas sobre a Região!"
+                        android:text="Principas informações coletadas sobre a Região"
                         android:textStyle="bold" />
 
                     <ScrollView

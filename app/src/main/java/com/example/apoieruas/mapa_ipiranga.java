@@ -12,21 +12,21 @@ import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
 
 
-public class mapa_freguesia extends AppCompatActivity {
+public class mapa_ipiranga extends AppCompatActivity {
 
 
 
     SliderView sliderView;
-    int[] images = {R.drawable.freguesia,
-    R.drawable.freguesia_mapa,
-    R.drawable.morador1};
+    int[] images = {R.drawable.ipiranga,
+            R.drawable.ipiranga_mapa,
+            R.drawable.morador2};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mapa_freguesia);
+        setContentView(R.layout.mapa_ipiranga);
         getSupportActionBar().hide();
-        sliderView = findViewById(R.id.image_slider);
+        sliderView = findViewById(R.id.image_slider_ipiranga);
 
         SliderAdapter sliderAdapter = new SliderAdapter(images);
 
@@ -57,7 +57,7 @@ public class mapa_freguesia extends AppCompatActivity {
 
         TextView title = findViewById(R.id.toolbar_title);
 
-        title.setText("Freguesia do Ó");
+        title.setText("Ipiranga");
 
 
 
