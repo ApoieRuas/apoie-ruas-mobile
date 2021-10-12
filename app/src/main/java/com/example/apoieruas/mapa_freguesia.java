@@ -34,7 +34,7 @@ public class mapa_freguesia extends AppCompatActivity {
         sliderView.setSliderTransformAnimation(SliderAnimations.SIMPLETRANSFORMATION);
         sliderView.startAutoCycle();
 
-        // Quem somos - começo
+
         ImageView back = (ImageView) findViewById(R.id.arrow_back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +42,19 @@ public class mapa_freguesia extends AppCompatActivity {
                 finish();
             }
         });
+
+//        ImageView morador = (ImageView) findViewById(R.id.morador);
+//        morador.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                getSupportFragmentManager().beginTransaction()
+//                        .add(R.id.container, new NotificationsFragment())
+//                        .commit();
+//                }
+//
+//        });
+
+
 
 
 

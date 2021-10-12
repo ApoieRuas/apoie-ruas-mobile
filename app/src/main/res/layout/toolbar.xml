@@ -26,14 +26,13 @@
             android:textColor="#fff"
             android:textSize="17sp" />
 
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_centerVertical="true"
-            android:id="@+id/morador"
-
-            android:layout_alignParentEnd="true"
-            android:src="@drawable/ic_baseline_local_grocery_store_24_white"/>
+<!--        <ImageView-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:id="@+id/morador"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:src="@drawable/ic_baseline_settings_24"/>-->
 
     </RelativeLayout>
 </RelativeLayout>

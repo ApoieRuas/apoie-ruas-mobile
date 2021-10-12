@@ -1,701 +1,719 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    tools:ignore="MissingDefaultResource"
-    android:scrollbarThumbVertical="@color/white"
-    >
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.dashboard.DashboardFragment"
-    android:orientation="vertical"
-    tools:ignore="MissingDefaultResource"
-    android:padding="20dp"
-    android:background="@color/white"
-    android:id="@+id/regioes">
+    tools:ignore="MissingDefaultResource">
 
-    <LinearLayout
+    <include
+        android:id="@+id/include3"
+        layout="@layout/toolbar_maps" />
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        app:layout_constraintTop_toBottomOf="@+id/include3">
 
-        <TextView
-            android:id="@+id/text"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Principais Regiões"
-            android:textSize="30dp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:fontFamily="@font/montserrat_medium"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/desc_mapa"
-                android:fontFamily="@font/montserrat_medium"
-                android:textStyle="bold"
-                android:layout_marginTop="10dp"/>
-    </LinearLayout>
- 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            app:cardCornerRadius="15dp"
-            android:layout_marginTop="20dp"
-
-            >
-
-        <RelativeLayout
-
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/darkred"
-            android:padding="10dp"
-            android:id="@+id/primeiro">
+            android:scrollbarThumbVertical="@null"
+            tools:ignore="MissingDefaultResource">
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="1dp"
-                android:background="@drawable/ic_baseline_arrow_forward_24" />
-
-            <TextView
-                android:id="@+id/t1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="1dp"
-                android:fontFamily="@font/montserrat_medium"
-                android:text="Freguesia"
-                android:textColor="@color/white"
-                android:textSize="30sp"
-                android:textStyle="bold" />
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/t1"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="12dp"
-                android:fontFamily="@font/montserrat_regular"
-                android:text="Freguesia do Ó é localizada no Noroeste da Região de São Paulo"
-                android:textColor="@color/white" />
-
-
-
-            <!--            <androidx.cardview.widget.CardView-->
-<!--                android:layout_width="120dp"-->
-<!--                android:layout_height="100dp"-->
-<!--                android:layout_alignParentRight="true"-->
-<!--                android:maxHeight="100dp"-->
-<!--                app:cardCornerRadius="15dp"-->
-<!--                >-->
-<!--            <ImageView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:scaleType="centerCrop"-->
-<!--                android:src="@drawable/freguesia"-->
-<!--                />-->
-<!--            </androidx.cardview.widget.CardView>-->
-        </RelativeLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            app:cardCornerRadius="15dp"
-            android:layout_marginTop="20dp">
-
-            <RelativeLayout
+            <LinearLayout
+                android:id="@+id/regioes"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/darkred"
-                android:padding="10dp">
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="20dp"
+                tools:context=".ui.dashboard.DashboardFragment"
+                tools:ignore="MissingDefaultResource">
 
-                <TextView
-                    android:id="@+id/t2"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="1dp"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="Ipiranga"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
+                    android:layout_marginTop="-10dp"
+                    android:orientation="vertical">
 
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button2"
-                    android:layout_width="50dp"
+                    <TextView
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Principais Regiões"
+                        android:textColor="@color/black"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="@string/desc_mapa"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="1dp"
-                    android:background="@drawable/ic_baseline_arrow_forward_24" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/t2"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="12dp"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:text="Ipiranga é um distrito localizado na Zona Sul da Região de São Paulo"
-                    android:textColor="@color/white" />
-
-<!--                <androidx.cardview.widget.CardView-->
-<!--                    android:layout_width="120dp"-->
-<!--                    android:layout_height="100dp"-->
-<!--                    android:layout_alignParentRight="true"-->
-<!--                    android:maxHeight="100dp"-->
-<!--                    app:cardCornerRadius="15dp">-->
-<!--                    <ImageView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:scaleType="centerCrop"-->
-<!--                        android:src="@drawable/ipiranga" />-->
-<!--                </androidx.cardview.widget.CardView>-->
-            </RelativeLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            app:cardCornerRadius="15dp"
-            android:layout_marginTop="20dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/darkred"
-                android:padding="10dp">
-
-                <TextView
-                    android:id="@+id/t3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="1dp"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="Itaquera"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button3"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="1dp"
-                    android:background="@drawable/ic_baseline_arrow_forward_24" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/t3"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="12dp"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:text="Itaquera é um distrito localizado na Zona Leste da Região de São Paulo"
-                    android:textColor="@color/white" />
-
-<!--                <androidx.cardview.widget.CardView-->
-<!--                    android:layout_width="120dp"-->
-<!--                    android:layout_height="100dp"-->
-<!--                    android:layout_alignParentRight="true"-->
-<!--                    android:maxHeight="100dp"-->
-<!--                    app:cardCornerRadius="15dp">-->
-<!--                    <ImageView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:scaleType="centerCrop"-->
-<!--                        android:src="@drawable/itaquera" />-->
-<!--                </androidx.cardview.widget.CardView>-->
-            </RelativeLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            app:cardCornerRadius="15dp"
-            android:layout_marginTop="20dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/darkred"
-                android:padding="10dp">
-
-                <TextView
-                    android:id="@+id/t4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="1dp"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="Jaçanã"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button4"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="1dp"
-                    android:background="@drawable/ic_baseline_arrow_forward_24" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/t4"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="12dp"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:text="Jaçanã é um distrito localizado na Zona Norte da Região de São Paulo"
-                    android:textColor="@color/white" />
-
-<!--                <androidx.cardview.widget.CardView-->
-<!--                    android:layout_width="120dp"-->
-<!--                    android:layout_height="100dp"-->
-<!--                    android:layout_alignParentRight="true"-->
-<!--                    android:maxHeight="100dp"-->
-<!--                    app:cardCornerRadius="15dp">-->
-<!--                    <ImageView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:scaleType="centerCrop"-->
-<!--                        android:src="@drawable/jaca" />-->
-<!--                </androidx.cardview.widget.CardView>-->
-            </RelativeLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            app:cardCornerRadius="15dp"
-            android:layout_marginTop="20dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/darkred"
-                android:padding="10dp">
-
-                <TextView
-                    android:id="@+id/t5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="1dp"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="Vila Mariana"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button5"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="1dp"
-                    android:background="@drawable/ic_baseline_arrow_forward_24" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/t5"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="12dp"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:text="Vila Mariana é um distrito localizado na Zona Centro-Sul da Região de São Paulo"
-                    android:textColor="@color/white" />
-
-<!--                <androidx.cardview.widget.CardView-->
-<!--                    android:layout_width="120dp"-->
-<!--                    android:layout_height="100dp"-->
-<!--                    android:layout_alignParentRight="true"-->
-<!--                    android:maxHeight="100dp"-->
-<!--                    app:cardCornerRadius="15dp">-->
-<!--                    <ImageView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:scaleType="centerCrop"-->
-<!--                        android:src="@drawable/vilamariana" />-->
-<!--                </androidx.cardview.widget.CardView>-->
-            </RelativeLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            app:cardCornerRadius="15dp"
-            android:layout_marginTop="20dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/darkred"
-                android:padding="10dp">
-
-                <TextView
-                    android:id="@+id/t6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="1dp"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="São Matheus"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button6"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="1dp"
-                    android:background="@drawable/ic_baseline_arrow_forward_24" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/t6"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="12dp"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:text="São Mateus é um distrito localizado na Zona Leste da Região de São Paulo"
-                    android:textColor="@color/white" />
-
-<!--                <androidx.cardview.widget.CardView-->
-<!--                    android:layout_width="120dp"-->
-<!--                    android:layout_height="100dp"-->
-<!--                    android:layout_alignParentRight="true"-->
-<!--                    android:maxHeight="100dp"-->
-<!--                    app:cardCornerRadius="15dp">-->
-<!--                    <ImageView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:scaleType="centerCrop"-->
-<!--                        android:src="@drawable/saomatheus" />-->
-<!--                </androidx.cardview.widget.CardView>-->
-            </RelativeLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            app:cardCornerRadius="15dp"
-            android:layout_marginTop="20dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/darkred"
-                android:padding="10dp">
-
-                <TextView
-                    android:id="@+id/t7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="1dp"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="Penha"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button7"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="1dp"
-                    android:background="@drawable/ic_baseline_arrow_forward_24" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/t7"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="12dp"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:text="Penha é um distrito localizado na Zona Leste da Região da Região de São Paulo"
-                    android:textColor="@color/white" />
-
-<!--                <androidx.cardview.widget.CardView-->
-<!--                    android:layout_width="120dp"-->
-<!--                    android:layout_height="100dp"-->
-<!--                    android:layout_alignParentRight="true"-->
-<!--                    android:maxHeight="100dp"-->
-<!--                    app:cardCornerRadius="15dp">-->
-<!--                    <ImageView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:scaleType="centerCrop"-->
-<!--                        android:src="@drawable/penha" />-->
-<!--                </androidx.cardview.widget.CardView>-->
-            </RelativeLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            app:cardCornerRadius="15dp"
-            android:layout_marginTop="20dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/darkred"
-                android:padding="10dp">
-
-                <TextView
-                    android:id="@+id/t8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="1dp"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="Pinheiros"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button8"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="1dp"
-                    android:background="@drawable/ic_baseline_arrow_forward_24" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/t8"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="12dp"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:text="Pinheiros é um distrito localizado na Zona Oeste da Região da Região de São Paulo"
-                    android:textColor="@color/white" />
-
-<!--                <androidx.cardview.widget.CardView-->
-<!--                    android:layout_width="120dp"-->
-<!--                    android:layout_height="100dp"-->
-<!--                    android:layout_alignParentRight="true"-->
-<!--                    android:maxHeight="100dp"-->
-<!--                    app:cardCornerRadius="15dp">-->
-<!--                    <ImageView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:scaleType="centerCrop"-->
-<!--                        android:src="@drawable/pinheiros" />-->
-<!--                </androidx.cardview.widget.CardView>-->
-            </RelativeLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            app:cardCornerRadius="15dp"
-            android:layout_marginTop="20dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/darkred"
-                android:padding="10dp">
-
-                <TextView
-                    android:id="@+id/t9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="1dp"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="Santo Amaro"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button9"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="1dp"
-                    android:background="@drawable/ic_baseline_arrow_forward_24" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/t9"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="12dp"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:text="Santo Amaro é um distrito localizado na Zona Centro-sul da Região da Região de São Paulo"
-                    android:textColor="@color/white" />
-
-<!--                <androidx.cardview.widget.CardView-->
-<!--                    android:layout_width="120dp"-->
-<!--                    android:layout_height="100dp"-->
-<!--                    android:layout_alignParentRight="true"-->
-<!--                    android:maxHeight="100dp"-->
-<!--                    app:cardCornerRadius="15dp">-->
-<!--                    <ImageView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:scaleType="centerCrop"-->
-<!--                        android:src="@drawable/santoamaro" />-->
-<!--                </androidx.cardview.widget.CardView>-->
-            </RelativeLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            app:cardCornerRadius="15dp"
-            android:layout_marginTop="20dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/darkred"
-                android:padding="10dp">
-
-                <TextView
-                    android:id="@+id/t10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="1dp"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="Tiradentes"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button10"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="1dp"
-                    android:background="@drawable/ic_baseline_arrow_forward_24" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/t10"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="12dp"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:text="Tiradentes é um bairro localizado na Cidade de Tiradentes em São Paulo"
-                    android:textColor="@color/white" />
-
-<!--                <androidx.cardview.widget.CardView-->
-<!--                    android:layout_width="120dp"-->
-<!--                    android:layout_height="100dp"-->
-<!--                    android:layout_alignParentRight="true"-->
-<!--                    android:maxHeight="100dp"-->
-<!--                    app:cardCornerRadius="15dp">-->
-<!--                    <ImageView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:scaleType="centerCrop"-->
-<!--                        android:src="@drawable/tiradentes" />-->
-<!--                </androidx.cardview.widget.CardView>-->
-            </RelativeLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            app:cardCornerRadius="15dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="50dp"
-            >
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/darkred"
-                android:padding="10dp">
-
-                <TextView
-                    android:id="@+id/t11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="1dp"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="Vila Maria"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button11"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="1dp"
-                    android:background="@drawable/ic_baseline_arrow_forward_24" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/t11"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="12dp"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:text="Vila Maria é um distrito localizado na Zona Norte da Região de São Paulo"
-                    android:textColor="@color/white" />
-
-<!--                <androidx.cardview.widget.CardView-->
-<!--                    android:layout_width="120dp"-->
-<!--                    android:layout_height="100dp"-->
-<!--                    android:layout_alignParentRight="true"-->
-<!--                    android:maxHeight="100dp"-->
-<!--                    app:cardCornerRadius="15dp">-->
-<!--                    <ImageView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:scaleType="centerCrop"-->
-<!--                        android:src="@drawable/vilamaria" />-->
-<!--                </androidx.cardview.widget.CardView>-->
-            </RelativeLayout>
-
-        </androidx.cardview.widget.CardView>
-
-    </LinearLayout>
-
-</LinearLayout>
-    </ScrollView>
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="20dp"
+                        app:cardCornerRadius="15dp"
+
+                        >
+
+                        <RelativeLayout
+
+                            android:id="@+id/primeiro"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/darkred"
+                            android:padding="10dp">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/button"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="1dp"
+                                android:background="@drawable/ic_baseline_arrow_forward_24" />
+
+                            <TextView
+                                android:id="@+id/t1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Freguesia"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t1"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="Freguesia do Ó é localizada no Noroeste da Região de São Paulo"
+                                android:textColor="@color/white" />
+
+
+                            <!--            <androidx.cardview.widget.CardView-->
+                            <!--                android:layout_width="120dp"-->
+                            <!--                android:layout_height="100dp"-->
+                            <!--                android:layout_alignParentRight="true"-->
+                            <!--                android:maxHeight="100dp"-->
+                            <!--                app:cardCornerRadius="15dp"-->
+                            <!--                >-->
+                            <!--            <ImageView-->
+                            <!--                android:layout_width="match_parent"-->
+                            <!--                android:layout_height="match_parent"-->
+                            <!--                android:scaleType="centerCrop"-->
+                            <!--                android:src="@drawable/freguesia"-->
+                            <!--                />-->
+                            <!--            </androidx.cardview.widget.CardView>-->
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="20dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/darkred"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Ipiranga"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/button2"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="1dp"
+                                android:background="@drawable/ic_baseline_arrow_forward_24" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t2"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="Ipiranga é um distrito localizado na Zona Sul da Região de São Paulo"
+                                android:textColor="@color/white" />
+
+                            <!--                <androidx.cardview.widget.CardView-->
+                            <!--                    android:layout_width="120dp"-->
+                            <!--                    android:layout_height="100dp"-->
+                            <!--                    android:layout_alignParentRight="true"-->
+                            <!--                    android:maxHeight="100dp"-->
+                            <!--                    app:cardCornerRadius="15dp">-->
+                            <!--                    <ImageView-->
+                            <!--                        android:layout_width="match_parent"-->
+                            <!--                        android:layout_height="match_parent"-->
+                            <!--                        android:scaleType="centerCrop"-->
+                            <!--                        android:src="@drawable/ipiranga" />-->
+                            <!--                </androidx.cardview.widget.CardView>-->
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="20dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/darkred"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Itaquera"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/button3"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="1dp"
+                                android:background="@drawable/ic_baseline_arrow_forward_24" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t3"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="Itaquera é um distrito localizado na Zona Leste da Região de São Paulo"
+                                android:textColor="@color/white" />
+
+                            <!--                <androidx.cardview.widget.CardView-->
+                            <!--                    android:layout_width="120dp"-->
+                            <!--                    android:layout_height="100dp"-->
+                            <!--                    android:layout_alignParentRight="true"-->
+                            <!--                    android:maxHeight="100dp"-->
+                            <!--                    app:cardCornerRadius="15dp">-->
+                            <!--                    <ImageView-->
+                            <!--                        android:layout_width="match_parent"-->
+                            <!--                        android:layout_height="match_parent"-->
+                            <!--                        android:scaleType="centerCrop"-->
+                            <!--                        android:src="@drawable/itaquera" />-->
+                            <!--                </androidx.cardview.widget.CardView>-->
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="20dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/darkred"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Jaçanã"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/button4"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="1dp"
+                                android:background="@drawable/ic_baseline_arrow_forward_24" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t4"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="Jaçanã é um distrito localizado na Zona Norte da Região de São Paulo"
+                                android:textColor="@color/white" />
+
+                            <!--                <androidx.cardview.widget.CardView-->
+                            <!--                    android:layout_width="120dp"-->
+                            <!--                    android:layout_height="100dp"-->
+                            <!--                    android:layout_alignParentRight="true"-->
+                            <!--                    android:maxHeight="100dp"-->
+                            <!--                    app:cardCornerRadius="15dp">-->
+                            <!--                    <ImageView-->
+                            <!--                        android:layout_width="match_parent"-->
+                            <!--                        android:layout_height="match_parent"-->
+                            <!--                        android:scaleType="centerCrop"-->
+                            <!--                        android:src="@drawable/jaca" />-->
+                            <!--                </androidx.cardview.widget.CardView>-->
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="20dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/darkred"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Vila Mariana"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/button5"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="1dp"
+                                android:background="@drawable/ic_baseline_arrow_forward_24" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t5"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="Vila Mariana é um distrito localizado na Zona Centro-Sul da Região de São Paulo"
+                                android:textColor="@color/white" />
+
+                            <!--                <androidx.cardview.widget.CardView-->
+                            <!--                    android:layout_width="120dp"-->
+                            <!--                    android:layout_height="100dp"-->
+                            <!--                    android:layout_alignParentRight="true"-->
+                            <!--                    android:maxHeight="100dp"-->
+                            <!--                    app:cardCornerRadius="15dp">-->
+                            <!--                    <ImageView-->
+                            <!--                        android:layout_width="match_parent"-->
+                            <!--                        android:layout_height="match_parent"-->
+                            <!--                        android:scaleType="centerCrop"-->
+                            <!--                        android:src="@drawable/vilamariana" />-->
+                            <!--                </androidx.cardview.widget.CardView>-->
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="20dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/darkred"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="São Matheus"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/button6"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="1dp"
+                                android:background="@drawable/ic_baseline_arrow_forward_24" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t6"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="São Mateus é um distrito localizado na Zona Leste da Região de São Paulo"
+                                android:textColor="@color/white" />
+
+                            <!--                <androidx.cardview.widget.CardView-->
+                            <!--                    android:layout_width="120dp"-->
+                            <!--                    android:layout_height="100dp"-->
+                            <!--                    android:layout_alignParentRight="true"-->
+                            <!--                    android:maxHeight="100dp"-->
+                            <!--                    app:cardCornerRadius="15dp">-->
+                            <!--                    <ImageView-->
+                            <!--                        android:layout_width="match_parent"-->
+                            <!--                        android:layout_height="match_parent"-->
+                            <!--                        android:scaleType="centerCrop"-->
+                            <!--                        android:src="@drawable/saomatheus" />-->
+                            <!--                </androidx.cardview.widget.CardView>-->
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="20dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/darkred"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Penha"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/button7"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="1dp"
+                                android:background="@drawable/ic_baseline_arrow_forward_24" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t7"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="Penha é um distrito localizado na Zona Leste da Região da Região de São Paulo"
+                                android:textColor="@color/white" />
+
+                            <!--                <androidx.cardview.widget.CardView-->
+                            <!--                    android:layout_width="120dp"-->
+                            <!--                    android:layout_height="100dp"-->
+                            <!--                    android:layout_alignParentRight="true"-->
+                            <!--                    android:maxHeight="100dp"-->
+                            <!--                    app:cardCornerRadius="15dp">-->
+                            <!--                    <ImageView-->
+                            <!--                        android:layout_width="match_parent"-->
+                            <!--                        android:layout_height="match_parent"-->
+                            <!--                        android:scaleType="centerCrop"-->
+                            <!--                        android:src="@drawable/penha" />-->
+                            <!--                </androidx.cardview.widget.CardView>-->
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="20dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/darkred"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Pinheiros"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/button8"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="1dp"
+                                android:background="@drawable/ic_baseline_arrow_forward_24" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t8"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="Pinheiros é um distrito localizado na Zona Oeste da Região da Região de São Paulo"
+                                android:textColor="@color/white" />
+
+                            <!--                <androidx.cardview.widget.CardView-->
+                            <!--                    android:layout_width="120dp"-->
+                            <!--                    android:layout_height="100dp"-->
+                            <!--                    android:layout_alignParentRight="true"-->
+                            <!--                    android:maxHeight="100dp"-->
+                            <!--                    app:cardCornerRadius="15dp">-->
+                            <!--                    <ImageView-->
+                            <!--                        android:layout_width="match_parent"-->
+                            <!--                        android:layout_height="match_parent"-->
+                            <!--                        android:scaleType="centerCrop"-->
+                            <!--                        android:src="@drawable/pinheiros" />-->
+                            <!--                </androidx.cardview.widget.CardView>-->
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="20dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/darkred"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Santo Amaro"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/button9"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="1dp"
+                                android:background="@drawable/ic_baseline_arrow_forward_24" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t9"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="Santo Amaro é um distrito localizado na Zona Centro-sul da Região da Região de São Paulo"
+                                android:textColor="@color/white" />
+
+                            <!--                <androidx.cardview.widget.CardView-->
+                            <!--                    android:layout_width="120dp"-->
+                            <!--                    android:layout_height="100dp"-->
+                            <!--                    android:layout_alignParentRight="true"-->
+                            <!--                    android:maxHeight="100dp"-->
+                            <!--                    app:cardCornerRadius="15dp">-->
+                            <!--                    <ImageView-->
+                            <!--                        android:layout_width="match_parent"-->
+                            <!--                        android:layout_height="match_parent"-->
+                            <!--                        android:scaleType="centerCrop"-->
+                            <!--                        android:src="@drawable/santoamaro" />-->
+                            <!--                </androidx.cardview.widget.CardView>-->
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="20dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/darkred"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Tiradentes"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/button10"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="1dp"
+                                android:background="@drawable/ic_baseline_arrow_forward_24" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t10"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="Tiradentes é um bairro localizado na Cidade de Tiradentes em São Paulo"
+                                android:textColor="@color/white" />
+
+                            <!--                <androidx.cardview.widget.CardView-->
+                            <!--                    android:layout_width="120dp"-->
+                            <!--                    android:layout_height="100dp"-->
+                            <!--                    android:layout_alignParentRight="true"-->
+                            <!--                    android:maxHeight="100dp"-->
+                            <!--                    app:cardCornerRadius="15dp">-->
+                            <!--                    <ImageView-->
+                            <!--                        android:layout_width="match_parent"-->
+                            <!--                        android:layout_height="match_parent"-->
+                            <!--                        android:scaleType="centerCrop"-->
+                            <!--                        android:src="@drawable/tiradentes" />-->
+                            <!--                </androidx.cardview.widget.CardView>-->
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="50dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/darkred"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Vila Maria"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/button11"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="1dp"
+                                android:background="@drawable/ic_baseline_arrow_forward_24" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t11"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="Vila Maria é um distrito localizado na Zona Norte da Região de São Paulo"
+                                android:textColor="@color/white" />
+
+                            <!--                <androidx.cardview.widget.CardView-->
+                            <!--                    android:layout_width="120dp"-->
+                            <!--                    android:layout_height="100dp"-->
+                            <!--                    android:layout_alignParentRight="true"-->
+                            <!--                    android:maxHeight="100dp"-->
+                            <!--                    app:cardCornerRadius="15dp">-->
+                            <!--                    <ImageView-->
+                            <!--                        android:layout_width="match_parent"-->
+                            <!--                        android:layout_height="match_parent"-->
+                            <!--                        android:scaleType="centerCrop"-->
+                            <!--                        android:src="@drawable/vilamaria" />-->
+                            <!--                </androidx.cardview.widget.CardView>-->
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

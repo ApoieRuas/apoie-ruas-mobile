@@ -8,10 +8,9 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
-        android:layout_width="379dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/navbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
         android:theme="@style/Widget.BottomNavigationView"
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"
