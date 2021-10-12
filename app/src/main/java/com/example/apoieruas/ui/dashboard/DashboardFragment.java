@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -23,6 +24,7 @@ import com.example.apoieruas.mapa_saomatheus;
 import com.example.apoieruas.mapa_tiradentes;
 import com.example.apoieruas.mapa_vilamaria;
 import com.example.apoieruas.mapa_vilamariana;
+import com.example.apoieruas.tela_configs;
 
 public class DashboardFragment extends Fragment   {
 
@@ -32,6 +34,18 @@ public class DashboardFragment extends Fragment   {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_dashboard, container, false);
+
+        ImageView settings = view.findViewById(R.id.settings);
+        settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentActivity act = getActivity();
+
+                if (act != null) {
+                    startActivity(new Intent(act, tela_configs.class));
+                }
+            }
+        });
 
         androidx.appcompat.widget.AppCompatButton btnfreguesia = view.findViewById(R.id.btnfreguesia);
         btnfreguesia.setOnClickListener(new View.OnClickListener() {

@@ -1,15 +1,19 @@
 package com.example.apoieruas.ui.notifications;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
+import androidx.fragment.app.FragmentActivity;
 
+import com.example.apoieruas.R;
 import com.example.apoieruas.databinding.FragmentNotificationsBinding;
+import com.example.apoieruas.tela_configs;
 
 public class NotificationsFragment extends Fragment {
 
@@ -18,14 +22,21 @@ private FragmentNotificationsBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
             ViewGroup container, Bundle savedInstanceState) {
-        notificationsViewModel =
-                new ViewModelProvider(this).get(NotificationsViewModel.class);
+        final View view = inflater.inflate(R.layout.fragment_notifications, container, false);
 
-    binding = FragmentNotificationsBinding.inflate(inflater, container, false);
-    View root = binding.getRoot();
+        ImageView settings = view.findViewById(R.id.settings);
+        settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentActivity act = getActivity();
 
+                if (act != null) {
+                    startActivity(new Intent(act, tela_configs.class));
+                }
+            }
+        });
 
-        return root;
+        return view;
     }
 
 @Override

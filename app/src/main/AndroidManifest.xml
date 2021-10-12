@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.apoieruas" >
+    package="com.example.apoieruas">
 
     <application
         android:allowBackup="true"
@@ -8,8 +8,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ApoieRuas" >
-
+        android:theme="@style/Theme.ApoieRuas">
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_settings" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -26,52 +29,56 @@
             android:windowSoftInputMode="stateVisible|adjustPan" />
         <activity
             android:name=".splash_screen"
-            android:exported="true" >
-        </activity>
-
-        <activity android:name=".mapa_freguesia"
+            android:exported="true"></activity>
+        <activity
+            android:name=".mapa_freguesia"
             android:exported="true"
-            android:parentActivityName=".MainActivity"/>
-
-        <activity android:name=".mapa_ipiranga"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".mapa_ipiranga"
             android:exported="true"
-            android:parentActivityName=".MainActivity"/>
-
-        <activity android:name=".mapa_itaquera"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".mapa_itaquera"
             android:exported="true"
-            android:parentActivityName=".MainActivity"/>
-
-        <activity android:name=".mapa_jacana"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".mapa_jacana"
             android:exported="true"
-            android:parentActivityName=".MainActivity"/>
-
-        <activity android:name=".mapa_vilamariana"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".mapa_vilamariana"
             android:exported="true"
-            android:parentActivityName=".MainActivity"/>
-
-        <activity android:name=".mapa_saomatheus"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".mapa_saomatheus"
             android:exported="true"
-            android:parentActivityName=".MainActivity"/>
-
-        <activity android:name=".mapa_penha"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".mapa_penha"
             android:exported="true"
-            android:parentActivityName=".MainActivity"/>
-
-        <activity android:name=".mapa_pinheiros"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".mapa_pinheiros"
             android:exported="true"
-            android:parentActivityName=".MainActivity"/>
-
-        <activity android:name=".mapa_santoamaro"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".mapa_santoamaro"
             android:exported="true"
-            android:parentActivityName=".MainActivity"/>
-
-        <activity android:name=".mapa_tiradentes"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".mapa_tiradentes"
             android:exported="true"
-            android:parentActivityName=".MainActivity"/>
-
-        <activity android:name=".mapa_vilamaria"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".mapa_vilamaria"
             android:exported="true"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".tela_configs"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>
