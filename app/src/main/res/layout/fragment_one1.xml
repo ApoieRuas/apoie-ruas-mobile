@@ -23,7 +23,9 @@
         android:inputType="textEmailAddress"
         android:focusable="true"
         android:focusableInTouchMode="true"
-
+        android:textColorHint="@color/black"
+        android:shadowColor="@color/black"
+        android:fontFamily="@font/montserrat_medium"
         />
 
     <EditText
@@ -43,6 +45,8 @@
         android:inputType="textPassword"
         android:focusable="true"
         android:focusableInTouchMode="true"
+        android:textColorHint="@color/black"
+        android:fontFamily="@font/montserrat_medium"
         />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -50,12 +54,13 @@
         style="@style/Button"
         android:layout_width="match_parent"
         android:layout_height="63dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
         android:layout_marginTop="185dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:text="ENTRAR"
+        android:fontFamily="@font/montserratsemibold"
         android:textColor="@color/white"
         android:textSize="17sp" />
 
@@ -68,6 +73,7 @@
         android:layout_marginTop="260dp"
         android:text="@string/esqueceu_senha"
         android:textSize="15dp"
+        android:fontFamily="@font/montserrat_medium"
         android:textAlignment="center"/>
 
 </FrameLayout>
