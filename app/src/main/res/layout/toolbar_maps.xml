@@ -10,15 +10,24 @@
         android:layout_height="wrap_content"
         android:padding="16dp">
 
-        <androidx.appcompat.widget.SearchView
-            android:id="@+id/barra_de_pesquisa"
-            style="@style/Edit_Text3"
-            android:layout_width="290dp"
-            android:layout_height="40dp"
-            android:layout_centerVertical="true"
-            android:singleLine="true"
-            app:iconifiedByDefault="false"
-            app:queryHint="Pesquise Regiões" />
+<!--        <androidx.appcompat.widget.SearchView-->
+<!--            android:id="@+id/barra_de_pesquisa"-->
+<!--            style="@style/Edit_Text3"-->
+<!--            android:layout_width="290dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:singleLine="true"-->
+<!--            app:iconifiedByDefault="false"-->
+<!--            app:queryHint="Pesquise Regiões" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="MAPAS"
+            android:textColor="#fff"
+            android:textSize="17sp" />
 
 <!--        <TextView-->
 <!--            android:layout_width="wrap_content"-->
