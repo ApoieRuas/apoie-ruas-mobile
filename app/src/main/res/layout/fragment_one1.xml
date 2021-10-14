@@ -3,8 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".One">
+
+
 
     <!-- TODO: Update blank fragment layout -->
     <EditText
@@ -18,36 +22,44 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:hint="Digite Seu E-mail"
-        android:drawablePadding="10dp"
-        android:drawableLeft="@drawable/ic_email"
+        android:digits="1"
         android:inputType="textEmailAddress"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:drawablePadding="14dp"
+        android:drawableLeft="@drawable/ic_email"
         android:textColorHint="@color/black"
         android:shadowColor="@color/black"
         android:fontFamily="@font/montserrat_medium"
         />
-
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:gravity="center"
+        app:passwordToggleEnabled="true"
+        app:startIconTint="@color/black"
+        app:startIconDrawable="@drawable/ic_key"
+        app:passwordToggleDrawable="@drawable/ic_eye"
+        app:hintEnabled="false"
+        android:singleLine="true"
+        app:passwordToggleTint="@color/black"
+       >
     <EditText
         android:id="@+id/password"
         style="@style/editText1"
+        android:fontFamily="@font/montserrat_medium"
         android:layout_width="match_parent"
         android:layout_height="63dp"
+        android:hint="Digite Sua Senha"
+        android:inputType="numberPassword"
+        android:textColorHint="@color/black"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
-        android:layout_marginTop="85dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:drawablePadding="10dp"
-        android:drawableLeft="@drawable/ic_key"
-        android:drawableRight="@drawable/ic_eye"
-        android:hint="Digite Sua Senha"
-        android:inputType="textPassword"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:textColorHint="@color/black"
-        android:fontFamily="@font/montserrat_medium"
+
         />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Botão_cadastrar"

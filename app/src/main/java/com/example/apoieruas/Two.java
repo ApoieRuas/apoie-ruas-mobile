@@ -4,7 +4,9 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 /**
@@ -52,12 +54,25 @@ public class Two extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_two1, container, false);
+
     }
-}
+
+
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        EditText phone = (EditText) getView().findViewById(R.id.phone);
+        phone.addTextChangedListener(Mask.insert("(##) #####-####", phone));
+
+        EditText cpf = (EditText) getView().findViewById(R.id.cpf);
+        cpf.addTextChangedListener(Mask.insert("###.###.###/##", cpf));
+    }
+    }
