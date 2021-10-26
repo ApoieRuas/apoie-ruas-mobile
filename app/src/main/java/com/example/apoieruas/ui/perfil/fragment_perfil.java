@@ -12,8 +12,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
 import com.example.apoieruas.R;
+import com.example.apoieruas.configs;
 import com.example.apoieruas.databinding.FragmentPerfilBinding;
-import com.example.apoieruas.tela_configs;
+import com.example.apoieruas.minha_conta_config;
 
 
 public class fragment_perfil extends Fragment {
@@ -32,10 +33,24 @@ public class fragment_perfil extends Fragment {
                 FragmentActivity act = getActivity();
 
                 if (act != null) {
-                    startActivity(new Intent(act, tela_configs.class));
+                    startActivity(new Intent(act, configs.class));
                 }
             }
         });
+
+        ImageView account = view.findViewById(R.id.exit);
+        account.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentActivity act = getActivity();
+
+                if (act != null) {
+                    startActivity(new Intent(act, minha_conta_config.class));
+                }
+            }
+        });
+
+
 
         return view;
     }

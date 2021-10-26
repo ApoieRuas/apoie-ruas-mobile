@@ -28,7 +28,7 @@
 
     <View
         android:id="@+id/containerComponents"
-        style="@style/ConstantComponents"
+        style="@style/ConstantComponents_ofc"
         android:layout_width="match_parent"
         android:layout_height="472dp"
         android:layout_alignParentTop="true"

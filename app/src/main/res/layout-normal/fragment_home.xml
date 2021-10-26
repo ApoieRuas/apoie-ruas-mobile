@@ -6,6 +6,352 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment"
     tools:ignore="MissingDefaultResource">
-<include layout="@layout/toolbar_home"/>
 
+    <include
+        android:id="@+id/tool"
+        layout="@layout/toolbar_home" />
+
+    <ScrollView
+        android:id="@+id/rolagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbarThumbVertical="@null"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toBottomOf="@+id/tool">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            android:scrollbarThumbVertical="@null"
+            app:layout_constraintTop_toBottomOf="@+id/tool">
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/image_slider_home"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:sliderAnimationDuration="2000"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderAutoCycleEnabled="true"
+                app:sliderIndicatorAnimationDuration="600"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="15dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="2dp"
+                app:sliderIndicatorSelectedColor="@color/black"
+                app:sliderIndicatorUnselectedColor="@color/white"
+                app:sliderScrollTimeInSec="10"
+                app:sliderStartAutoCycle="true" />
+
+            <RelativeLayout
+                android:id="@+id/frase"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/image_slider_home"
+                android:background="@drawable/conteiner_img_round">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:drawableTint="@color/white"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/motivacao"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frase">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:padding="10dp"
+                    android:text="Já Ouviu Falar?"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="O projeto Apoie Ruas começou com 5 integrantes de um grupo de TCC. Uma história simples, porém que envolve muito empenho, amor e dedicação"
+                    android:textColor="@color/black"
+                    android:textSize="23sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/p1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="Lian, Pedro, Vinicius, Vitor Almeida e Vitor Sousa, alunos do Instituto Técnico de Barueri, idealizaram esse projeto após visitarem o site da Organização das Nações Unidas (ONU) e observarem a 'Agenga2030', agenda que consiste em metas a serem atingidas até 2030."
+                    android:textColor="@color/black"
+                    android:textSize="23sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+            android:id="@+id/p3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="Alguns dias depois, após um dos integrantes ver uma reportagem sobre ONGS que ajudavam moradores em situação de rua, planejamos e começamos a desenvolver o Apoie Ruas."
+                    android:textColor="@color/black"
+                    android:textSize="23sp" />
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/p3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:padding="10dp"
+                    android:text="Qual o Objetivo?"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="Nosso aplicativo foi desenvolvido para auxiliar todas ONG's que desejam prestar alguma ajuda a população em situação de rua na cidade de São Paulo."
+                    android:textColor="@color/black"
+                    android:textSize="23sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/p4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:text="Fornecemos um mapa interativo de algumas regiões do estado de São Paulo com a concentração desses moradores. Além de listarmos os produtos essenciais para as ONG'S reservarem para os moradores de rua."
+                    android:textColor="@color/black"
+                    android:textSize="23sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/title3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/p5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:padding="10dp"
+                    android:text="Quer Saber Mais?"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/title3"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                android:columnCount="1"
+                android:rowCount="2">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c1"
+                    android:onClick="expand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="120dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_margin="5sp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardElevation="5dp"
+                    android:elevation="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="15dp">
+
+                    <RelativeLayout
+                        android:id="@+id/missao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animateLayoutChanges="true">
+
+                    <RelativeLayout
+                        android:id="@+id/img1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/black">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:alpha="0.3"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/help1" />
+
+                        </RelativeLayout>
+                        <TextView
+                            android:id="@+id/t1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="45dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="NOSSA MISSÃO"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:id="@+id/d1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img1"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:padding="15dp"
+                            android:text="Colaboramos para amenizar a pobreza extrema e a fome da população de situação de rua, com o objetivo que nossa idéia não fique apenas no estado de São Paulo, mas em todo no planeta Terra!"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:onClick="expand2"
+                    android:id="@+id/c2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_margin="5sp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardElevation="5dp"
+                    android:elevation="10dp"
+                    android:layout_marginBottom="130dp"
+                    app:cardCornerRadius="15dp">
+
+                    <RelativeLayout
+                        android:id="@+id/visao"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:animateLayoutChanges="true"
+                        android:background="@color/white">
+
+                        <RelativeLayout
+                            android:id="@+id/img2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/black">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="120dp"
+                                android:alpha="0.3"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/help2" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/t2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+
+                            android:layout_marginTop="45dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="NOSSA VISÃO"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:id="@+id/d2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img2"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:padding="15dp"
+                            android:text="Ser um projeto reconhecido pelo impacto social positivo gerado pelas nossa ideias, através do desenvolvimento em conjunto com ONG's do estado de São Paulo!"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:visibility="gone" />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+        </RelativeLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

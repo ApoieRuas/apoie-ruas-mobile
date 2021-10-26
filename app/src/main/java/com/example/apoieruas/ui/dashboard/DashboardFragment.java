@@ -24,7 +24,7 @@ import com.example.apoieruas.mapa_saomatheus;
 import com.example.apoieruas.mapa_tiradentes;
 import com.example.apoieruas.mapa_vilamaria;
 import com.example.apoieruas.mapa_vilamariana;
-import com.example.apoieruas.tela_configs;
+import com.example.apoieruas.configs;
 
 public class DashboardFragment extends Fragment   {
 
@@ -42,7 +42,7 @@ public class DashboardFragment extends Fragment   {
                 FragmentActivity act = getActivity();
 
                 if (act != null) {
-                    startActivity(new Intent(act, tela_configs.class));
+                    startActivity(new Intent(act, configs.class));
                 }
             }
         });

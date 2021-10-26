@@ -76,10 +76,28 @@
             android:parentActivityName=".MainActivity" />
 
         <activity
-            android:name=".tela_configs"
-            android:exported="true"
-            android:parentActivityName=".MainActivity" />
-    </application>
+            android:name=".configs"
+            android:exported="true" />
+
+        <activity
+            android:name=".minha_conta_config"
+            android:exported="true" />
+
+        <activity
+            android:name=".info_legais"
+            android:exported="true" />
+
+        <activity
+            android:name=".fale_conosco"
+            android:exported="true" />
+    <activity
+        android:name=".faq"
+        android:exported="true" />
+
+        <activity
+            android:name=".sobre"
+            android:exported="true" />
+</application>
 
 </manifest>
 <!--    Token GitHub-->

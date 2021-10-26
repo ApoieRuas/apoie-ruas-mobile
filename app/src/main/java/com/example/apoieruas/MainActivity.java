@@ -1,7 +1,12 @@
 package com.example.apoieruas;
 
+import android.animation.LayoutTransition;
 import android.os.Bundle;
-import android.widget.EditText;
+import android.transition.AutoTransition;
+import android.transition.TransitionManager;
+import android.view.View;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -14,7 +19,13 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
+    TextView detailsText;
+    RelativeLayout layout;
+
+    TextView detailsText2;
+    RelativeLayout layout2;
     private ActivityMainBinding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,8 +46,25 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        detailsText = findViewById(R.id.d1);
+        layout = findViewById(R.id.missao);
+        layout.getLayoutTransition().enableTransitionType(LayoutTransition.CHANGING);
 
+        detailsText2 = findViewById(R.id.d2);
+        layout2 = findViewById(R.id.visao);
+        layout2.getLayoutTransition().enableTransitionType(LayoutTransition.CHANGING);
 
     }
 
+    public void expand(View view) {
+        int v = (detailsText.getVisibility() == View.GONE)? View.VISIBLE: View.GONE;
+        TransitionManager.beginDelayedTransition(layout, new AutoTransition());
+        detailsText.setVisibility(v);
+    }
+
+    public void expand2(View view) {
+        int v = (detailsText2.getVisibility() == View.GONE)? View.VISIBLE: View.GONE;
+        TransitionManager.beginDelayedTransition(layout, new AutoTransition());
+        detailsText2.setVisibility(v);
+    }
 }

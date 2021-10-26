@@ -12,8 +12,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
 import com.example.apoieruas.R;
+import com.example.apoieruas.configs;
 import com.example.apoieruas.databinding.FragmentNotificationsBinding;
-import com.example.apoieruas.tela_configs;
 
 public class NotificationsFragment extends Fragment {
 
@@ -31,7 +31,7 @@ private FragmentNotificationsBinding binding;
                 FragmentActivity act = getActivity();
 
                 if (act != null) {
-                    startActivity(new Intent(act, tela_configs.class));
+                    startActivity(new Intent(act, configs.class));
                 }
             }
         });

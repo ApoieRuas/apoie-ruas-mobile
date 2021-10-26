@@ -87,9 +87,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/montserrat_medium"
-                        android:text="Principas informações coletadas sobre a Região"
-                        android:textStyle="bold" />
+                        android:text="Principas informações coletadas sobre a Região:"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/black" />
 
                     <ScrollView
                         android:layout_width="match_parent"

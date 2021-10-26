@@ -12,8 +12,6 @@
         android:id="@+id/include2"
         layout="@layout/toolbar_user" />
 
-
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -27,7 +25,6 @@
                     android:layout_centerHorizontal="true"
                     android:fontFamily="@font/montserrat_regular"
                     android:text="Olá!"
-                    android:layout_marginTop="10dp"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="40sp" />
@@ -36,20 +33,20 @@
                     android:id="@+id/nome_main"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_below="@+id/ola"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="15dp"
                     android:fontFamily="@font/montserratsemibold"
                     android:text="José Leonardo Souza Santos"
                     android:textAlignment="center"
                     android:textColor="@color/white"
-                    android:layout_below="@+id/ola"
                     android:textSize="23sp" />
 
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/user"
-                    android:layout_width="190dp"
-                    android:layout_height="190dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_below="@+id/nome_main"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
@@ -64,192 +61,192 @@
                         android:src="@drawable/leaoperfil" />
 
                 </androidx.cardview.widget.CardView>
+
                 <ScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:scrollbarThumbVertical="@null"
+                    android:layout_height="wrap_content"
                     android:layout_below="@+id/user"
-                    android:layout_marginTop="15dp"
-                    tools:ignore="MissingConstraints">
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    android:overScrollMode="never"
+                    android:scrollbarThumbVertical="@null">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <RelativeLayout
-                        android:id="@+id/name"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/user">
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
 
-
-                        <TextView
-                            android:id="@+id/texto_name"
-                            android:layout_width="wrap_content"
+                        <RelativeLayout
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="30dp"
-                            android:drawablePadding="5dp"
-                            android:drawableTint="@color/black"
-                            android:fontFamily="@font/montserrat_medium"
-                            android:text="Nome"
-                            android:textColor="@color/black"
-                            android:textSize="18sp"
-                            app:drawableStartCompat="@drawable/ic_outline_account_circle_24" />
+                            android:layout_below="@+id/user"
+                            android:layout_marginTop="35dp">
 
-                        <TextView
-                            android:layout_width="wrap_content"
+
+                            <TextView
+                                android:id="@+id/texto_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:drawablePadding="5dp"
+                                android:drawableTint="@color/black"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="NOME"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/texto_name"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginTop="7dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="José Leonardo Souza Santos"
+                                android:textColor="@color/black"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_below="@+id/texto_name"
-                            android:layout_marginLeft="30dp"
-                            android:layout_marginTop="7dp"
-                            android:fontFamily="@font/montserrat_medium"
-                            android:text="José Leonardo Souza Santos"
-                            android:textColor="@color/black" />
-
-                        <androidx.appcompat.widget.AppCompatButton
-                            android:id="@+id/edit1"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_alignParentEnd="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginEnd="30dp"
-                            android:background="@drawable/ic_outline_edit_24"
-                            android:backgroundTint="@color/black" />
-
-                    </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/email"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/name"
-                    android:layout_marginTop="15dp">
+                            android:layout_below="@+id/name"
+                            android:layout_marginTop="30dp">
 
 
-                    <TextView
-                        android:id="@+id/texto_email"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:drawablePadding="5dp"
-                        android:drawableTint="@color/black"
-                        android:fontFamily="@font/montserrat_medium"
-                        android:text="Email"
-                        android:textColor="@color/black"
-                        android:textSize="18sp"
-                        app:drawableStartCompat="@drawable/ic_outline_email_24" />
+                            <TextView
+                                android:id="@+id/texto_email"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:drawablePadding="5dp"
+                                android:drawableTint="@color/black"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="E-MAIL"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/texto_email"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginTop="7dp"
-                        android:fontFamily="@font/montserrat_medium"
-                        android:text="joseleonardosantoos@outlook.com"
-                        android:textColor="@color/black" />
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/edit2"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="30dp"
-                        android:background="@drawable/ic_outline_edit_24"
-                        android:backgroundTint="@color/black" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/cpf"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/email"
-                    android:layout_marginTop="15dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/texto_email"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginTop="7dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="joseleonardosantoos@outlook.com"
+                                android:textColor="@color/black"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
 
 
-                    <TextView
-                        android:id="@+id/texto_cpf"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:drawablePadding="5dp"
-                        android:drawableTint="@color/black"
-                        android:fontFamily="@font/montserrat_medium"
-                        android:text="CPF"
-                        android:textColor="@color/black"
-                        android:textSize="18sp"
-                        app:drawableStartCompat="@drawable/ic_outline_assignment_24" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/texto_cpf"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginTop="7dp"
-                        android:fontFamily="@font/montserrat_medium"
-                        android:text="399.295.618/03"
-                        android:textColor="@color/black" />
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/edit3"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="30dp"
-                        android:background="@drawable/ic_outline_edit_24"
-                        android:backgroundTint="@color/black" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/phone"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/cpf"
-                    android:layout_marginTop="15dp">
+                        </RelativeLayout>
 
 
-                    <TextView
-                        android:id="@+id/texto_phone"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:drawablePadding="5dp"
-                        android:drawableTint="@color/black"
-                        android:fontFamily="@font/montserrat_medium"
-                        android:text="Telefone"
-                        android:textColor="@color/black"
-                        android:textSize="18sp"
-                        app:drawableStartCompat="@drawable/ic_phone" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/texto_phone"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginTop="7dp"
-                        android:fontFamily="@font/montserrat_medium"
-                        android:text="55+ (11) 99457-3560"
-                        android:textColor="@color/black" />
+                        <RelativeLayout
+                            android:id="@+id/cpf"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/email"
+                            android:layout_marginTop="30dp">
 
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/edit4"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="30dp"
-                        android:background="@drawable/ic_outline_edit_24"
-                        android:backgroundTint="@color/black" />
 
-                </RelativeLayout>
-                </LinearLayout>
+                            <TextView
+                                android:id="@+id/texto_cpf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:drawablePadding="5dp"
+                                android:drawableTint="@color/black"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="CPF"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/texto_cpf"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginTop="7dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="399.295.618/03"
+                                android:textColor="@color/black"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cpf"
+                            android:layout_marginTop="30dp">
+
+
+                            <TextView
+                                android:id="@+id/texto_phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:drawablePadding="5dp"
+                                android:drawableTint="@color/black"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="TELEFONE"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/texto_phone"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginTop="7dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="(11) 99457-3560"
+                                android:textColor="@color/black"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
                 </ScrollView>
+
+                <ImageView
+                    android:id="@+id/button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="223dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btnedit" />
+
+                <ImageView
+                    android:id="@+id/edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/button"
+                    android:layout_alignBottom="@+id/button"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginBottom="9dp"
+                    android:background="@drawable/ic_outline_edit_24"
+                    android:backgroundTint="@color/white"/>
+
+
+
+
+
             </RelativeLayout>
 
 

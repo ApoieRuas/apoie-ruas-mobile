@@ -16,6 +16,12 @@
         <item name="android:background">@drawable/container_components_entrar</item>
     </style>
 
+    <style name="ConstantComponents_ofc">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">700dp</item>
+        <item name="android:background">@drawable/container_components_entrar_ofc</item>
+    </style>
+
     <style name="TabLayout" parent="@android:style/TextAppearance.Widget.TabWidget">
         <item name="android:textSize">17sp</item>
         <item name="android:textAllCaps">false</item>
