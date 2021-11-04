@@ -29,7 +29,7 @@
             android:fontFamily="@font/montserrat_medium"
             android:text="Minha Conta"
             android:textColor="@color/black"
-            android:textSize="25sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             app:drawableStartCompat="@drawable/ic_baseline_exit_to_app_24" />
 
@@ -76,9 +76,9 @@
             android:drawablePadding="5dp"
             android:drawableTint="@color/black"
             android:fontFamily="@font/montserrat_medium"
-            android:text="Informações Legais"
+            android:text="Segurança Legal"
             android:textColor="@color/black"
-            android:textSize="25sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             app:drawableStartCompat="@drawable/ic_outline_lock_24" />
 
@@ -129,7 +129,7 @@
             android:fontFamily="@font/montserrat_medium"
             android:text="Fale Conosco"
             android:textColor="@color/black"
-            android:textSize="25sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             app:drawableStartCompat="@drawable/ic_outline_question_answer_24" />
 
@@ -180,7 +180,7 @@
             android:fontFamily="@font/montserrat_medium"
             android:text="Apoie Ruas Web"
             android:textColor="@color/black"
-            android:textSize="25sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             app:drawableStartCompat="@drawable/ic_baseline_language_24" />
 
@@ -228,9 +228,9 @@
             android:drawablePadding="5dp"
             android:drawableTint="@color/black"
             android:fontFamily="@font/montserrat_medium"
-            android:text="Perguntas Frequentes"
+            android:text="Perguntas FAQ"
             android:textColor="@color/black"
-            android:textSize="25sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             app:drawableStartCompat="@drawable/ic_baseline_help_outline_24" />
 
@@ -246,55 +246,4 @@
             android:backgroundTint="@color/black" />
 
     </RelativeLayout>
-
-    <!--Informações Legais-->
-    <View
-        android:id="@+id/divisor_sobre3"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="30dp"
-        android:background="@color/black_overlay"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/faq" />
-
-    <RelativeLayout
-        android:id="@+id/sobre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/divisor_sobre3">
-
-        <TextView
-            android:id="@+id/texto_sobre"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:drawablePadding="5dp"
-            android:drawableTint="@color/black"
-            android:fontFamily="@font/montserrat_medium"
-            android:text="Sobre o Aplicativo"
-            android:textColor="@color/black"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            app:drawableStartCompat="@drawable/ic_outline_info_24" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnsobre"
-            android:layout_width="30dp"
-            android:layout_centerVertical="true"
-            android:layout_height="30dp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="10dp"
-            android:background="@drawable/ic_baseline_keyboard_arrow_right_24"
-            android:backgroundTint="@color/black" />
-
-    </RelativeLayout>
-    <!--Fim-->
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -32,7 +32,7 @@
             <com.smarteist.autoimageslider.SliderView
                 android:id="@+id/image_slider_home"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="360dp"
                 app:sliderAnimationDuration="2000"
                 app:sliderAutoCycleDirection="back_and_forth"
                 app:sliderAutoCycleEnabled="true"
@@ -82,14 +82,15 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/montserratsemibold"
                     android:padding="10dp"
-                    android:text="Já Ouviu Falar?"
+                    android:text="Já Ouviu Falar Sobre?"
                     android:textColor="@color/black"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
+
             <RelativeLayout
-                android:id="@+id/p1"
+                android:id="@+id/p2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/title1">
@@ -98,26 +99,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/montserrat_regular"
+                    android:gravity="left"
                     android:justificationMode="inter_word"
                     android:padding="10dp"
-                    android:text="O projeto Apoie Ruas começou com 5 integrantes de um grupo de TCC. Uma história simples, porém que envolve muito empenho, amor e dedicação"
-                    android:textColor="@color/black"
-                    android:textSize="23sp" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/p2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/p1">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:justificationMode="inter_word"
-                    android:padding="10dp"
-                    android:text="Lian, Pedro, Vinicius, Vitor Almeida e Vitor Sousa, alunos do Instituto Técnico de Barueri, idealizaram esse projeto após visitarem o site da Organização das Nações Unidas (ONU) e observarem a 'Agenga2030', agenda que consiste em metas a serem atingidas até 2030."
+                    android:text="Nossa pequena equipe formada por 5 integrantes, todos alunos do Instituto Técnico de Barueri, idealizaram esse projeto após visitarem o site da Organização das Nações Unidas (ONU) e observarem detalhadamente a 'Agenda2030', projeto de agenda que consiste em metas a serem atingidas até 2030."
                     android:textColor="@color/black"
                     android:textSize="23sp" />
             </RelativeLayout>
@@ -135,7 +120,8 @@
                     android:fontFamily="@font/montserrat_regular"
                     android:justificationMode="inter_word"
                     android:padding="10dp"
-                    android:text="Alguns dias depois, após um dos integrantes ver uma reportagem sobre ONGS que ajudavam moradores em situação de rua, planejamos e começamos a desenvolver o Apoie Ruas."
+                    android:gravity="left"
+                    android:text="Alguns dias de depois de ação e planjamento, logo após uma reportagem interresante sobre ONGS que ajudavam moradores em situação de rua, planejamos e decidimos desenvolver nosso sistema Apoie Ruas."
                     android:textColor="@color/black"
                     android:textSize="23sp" />
         </RelativeLayout>
@@ -169,6 +155,7 @@
                     android:fontFamily="@font/montserrat_regular"
                     android:justificationMode="inter_word"
                     android:padding="10dp"
+                    android:gravity="left"
                     android:text="Nosso aplicativo foi desenvolvido para auxiliar todas ONG's que desejam prestar alguma ajuda a população em situação de rua na cidade de São Paulo."
                     android:textColor="@color/black"
                     android:textSize="23sp" />
@@ -186,6 +173,7 @@
                     android:fontFamily="@font/montserrat_regular"
                     android:justificationMode="inter_word"
                     android:padding="10dp"
+                    android:gravity="left"
                     android:text="Fornecemos um mapa interativo de algumas regiões do estado de São Paulo com a concentração desses moradores. Além de listarmos os produtos essenciais para as ONG'S reservarem para os moradores de rua."
                     android:textColor="@color/black"
                     android:textSize="23sp" />

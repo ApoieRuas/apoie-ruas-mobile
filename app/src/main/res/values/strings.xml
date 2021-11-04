@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:name="http://schemas.android.com/apk/res-auto">
     <string name="app_name">Apoie Ruas</string>
     <string name="title_home">HOME</string>
     <string name="esqueceu_senha">Esqueceu a Senha?</string>
@@ -20,7 +20,7 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
-    <string name="desc_mapa">Informações de localização dos moradores de rua nas principais regiões de São Paulo!</string>
+    <string name="desc_mapa">Detalhes dos moradores de rua nas principais áreas de São Paulo!</string>
     <string name="start">start</string>
     <string name="close">close</string>
     <string name="title_activity_menu_lateral">MenuLateralActivity</string>
@@ -42,5 +42,46 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
-    <string name="motivacao">O importante é mudar o mundo!</string>
+    <string name="motivacao">APOIAR É MUDAR VIDAS</string>
+
+    <string-array name="sexo">
+        <item>VAZIO</item>
+        <item>FEMININO</item>
+        <item>MASCULINO</item>
+    </string-array>
+
+    <string-array name="cores">
+        <item>VAZIO</item>
+        <item>AMARELO</item>
+        <item>BRANCO</item>
+        <item>NEGRO</item>
+    </string-array>
+
+    <string-array name="regioes">
+        <item>VAZIO</item>
+        <item>FREGUESIA</item>
+        <item>IPIRANGA</item>
+        <item>ITAQUERA</item>
+        <item>JAÇANÃ</item>
+        <item>PENHA</item>
+        <item>PINHEIROS</item>
+        <item>SANTO AMARO</item>
+        <item>SÃO MATHEUS</item>
+        <item>TIRADENTES</item>
+        <item>VILA MARIA</item>
+        <item>VILAMARIANA</item>
+    </string-array>
+
+    <string-array name="produtos">
+        <item>PADRÃO</item>
+        <item>10 UNIDADES</item>
+        <item>20 UNIDADES</item>
+        <item>30 UNIDADES</item>
+        <item>40 UNIDADES</item>
+        <item>50 UNIDADES</item>
+        <item>60 UNIDADES</item>
+        <item>70 UNIDADES</item>
+        <item>80 UNIDADES</item>
+        <item>90 UNIDADES</item>
+    </string-array>
 </resources>

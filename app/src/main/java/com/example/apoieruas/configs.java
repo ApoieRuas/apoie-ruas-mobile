@@ -1,6 +1,7 @@
 package com.example.apoieruas;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -17,6 +18,8 @@ public class configs extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_configs);
+        getWindow().setStatusBarColor(Color.RED);
+        getWindow().setNavigationBarColor(Color.RED);
         getSupportActionBar().hide();
 
         //Botão Voltar da Toolbar
@@ -164,35 +167,6 @@ public class configs extends AppCompatActivity {
             }
         });
         //FAQ - Fim
-
-        //Sobre - Começo
-        RelativeLayout sobre = (RelativeLayout) findViewById(R.id.sobre);
-        sobre.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(configs.this,sobre.class);
-                startActivity(intent);
-            }
-        });
-
-        TextView texto_sobre = (TextView) findViewById(R.id.texto_sobre);
-        texto_sobre.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(configs.this,sobre.class);
-                startActivity(intent);
-            }
-        });
-
-        androidx.appcompat.widget.AppCompatButton btnsobre = (androidx.appcompat.widget.AppCompatButton) findViewById(R.id.btnsobre);
-        btnsobre.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(configs.this,sobre.class);
-                startActivity(intent);
-            }
-        });
-        //Sobre - Fim
 
         //Texto Toolbar
         TextView title = findViewById(R.id.configs);

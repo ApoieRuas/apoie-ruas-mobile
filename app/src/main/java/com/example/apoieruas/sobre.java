@@ -1,5 +1,6 @@
 package com.example.apoieruas;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -13,6 +14,8 @@ public class sobre extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sobre);
+        getWindow().setStatusBarColor(Color.RED);
+        getWindow().setNavigationBarColor(Color.RED);
         getSupportActionBar().hide();
 
         //Botão Voltar da Toolbar

@@ -1,5 +1,6 @@
 package com.example.apoieruas;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.widget.EditText;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -74,5 +76,18 @@ public class Two extends Fragment {
 
         EditText cpf = (EditText) getView().findViewById(R.id.cpf);
         cpf.addTextChangedListener(Mask.insert("###.###.###/##", cpf));
+
+        androidx.appcompat.widget.AppCompatButton Botão_cadastrar = view.findViewById(R.id.Botão_cadastrar);
+        Botão_cadastrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentActivity act = getActivity();
+
+                if (act != null) {
+                    startActivity(new Intent(act, intro_screen.class));
+                    getActivity().finish();
+                }
+            }
+        });
     }
     }

@@ -24,7 +24,8 @@
         android:layout_width="match_parent"
         android:layout_height="340dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/aimeudeus" />
+        android:src="@drawable/aimeudeus"
+        android:background="@color/black"/>
 
     <View
         android:id="@+id/containerComponents"

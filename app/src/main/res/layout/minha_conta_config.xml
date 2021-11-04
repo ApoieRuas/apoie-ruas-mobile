@@ -10,11 +10,8 @@
         android:id="@+id/include"
         layout="@layout/toolbar_configs" />
 
-
-
-
     <RelativeLayout
-        android:id="@+id/adicionar_quem_somos"
+        android:id="@+id/histdoa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -22,7 +19,7 @@
 
 
         <TextView
-            android:id="@+id/texto_quem_somos"
+            android:id="@+id/textohist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -30,7 +27,7 @@
             android:drawablePadding="5dp"
             android:drawableTint="@color/black"
             android:fontFamily="@font/montserrat_medium"
-            android:text="Histórico Doações"
+            android:text="Histórico de Doações"
             android:textColor="@color/black"
             android:textSize="25sp"
             android:textStyle="bold"
@@ -51,45 +48,6 @@
 
     </RelativeLayout>
 
-    <View
-        android:id="@+id/divisor_sobre_fundadores"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="30dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/adicionar_quem_somos" />
-
-    <RelativeLayout
-        android:id="@+id/adicionar_fundadores"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/divisor_sobre_fundadores">
-
-        <TextView
-            android:id="@+id/texto_fundadores"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:drawablePadding="5dp"
-            android:drawableTint="@color/black"
-            android:fontFamily="@font/montserrat_medium"
-            android:text="Redefinir Senha"
-            android:textColor="@color/black"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            app:drawableStartCompat="@drawable/ic_outline_lock_24" />
-
-
-
-    </RelativeLayout>
-    <!--Fim-->
 
     <!--Colaboradores-->
     <View
@@ -102,7 +60,7 @@
         android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/adicionar_fundadores" />
+        app:layout_constraintTop_toBottomOf="@id/histdoa" />
 
     <RelativeLayout
         android:id="@+id/adicionar_colaboradores"

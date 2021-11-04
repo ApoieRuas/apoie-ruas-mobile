@@ -1,5 +1,6 @@
 package com.example.apoieruas;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -25,6 +26,8 @@ public class mapa_vilamaria extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mapa_vilamaria);
+        getWindow().setStatusBarColor(Color.RED);
+        getWindow().setNavigationBarColor(Color.RED);
         getSupportActionBar().hide();
         sliderView = findViewById(R.id.image_slider);
 

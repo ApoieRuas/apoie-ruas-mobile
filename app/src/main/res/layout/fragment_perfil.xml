@@ -83,12 +83,22 @@
                             android:layout_below="@+id/user"
                             android:layout_marginTop="35dp">
 
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btnuser"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/ic_iconmonstr_user_19"
+                                android:backgroundTint="@color/black" />
+
 
                             <TextView
                                 android:id="@+id/texto_name"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="30dp"
+                                android:layout_marginLeft="70dp"
                                 android:drawablePadding="5dp"
                                 android:drawableTint="@color/black"
                                 android:fontFamily="@font/montserrat_medium"
@@ -100,7 +110,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/texto_name"
-                                android:layout_marginLeft="30dp"
+                                android:layout_marginLeft="70dp"
                                 android:layout_marginTop="7dp"
                                 android:fontFamily="@font/montserrat_medium"
                                 android:text="José Leonardo Souza Santos"
@@ -119,12 +129,21 @@
                             android:layout_below="@+id/name"
                             android:layout_marginTop="30dp">
 
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btnemail"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/ic_iconmonstr_email_10"
+                                android:backgroundTint="@color/black" />
 
                             <TextView
                                 android:id="@+id/texto_email"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="30dp"
+                                android:layout_marginLeft="70dp"
                                 android:drawablePadding="5dp"
                                 android:drawableTint="@color/black"
                                 android:fontFamily="@font/montserrat_medium"
@@ -136,10 +155,10 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/texto_email"
-                                android:layout_marginLeft="30dp"
+                                android:layout_marginLeft="70dp"
                                 android:layout_marginTop="7dp"
                                 android:fontFamily="@font/montserrat_medium"
-                                android:text="joseleonardosantoos@outlook.com"
+                                android:text="joseleonardo@outlook.com"
                                 android:textColor="@color/black"
                                 android:textSize="17sp"
                                 android:textStyle="bold" />
@@ -156,12 +175,21 @@
                             android:layout_below="@+id/email"
                             android:layout_marginTop="30dp">
 
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btncpf"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/ic_iconmonstr_star_6"
+                                android:backgroundTint="@color/black" />
 
                             <TextView
                                 android:id="@+id/texto_cpf"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="30dp"
+                                android:layout_marginLeft="70dp"
                                 android:drawablePadding="5dp"
                                 android:drawableTint="@color/black"
                                 android:fontFamily="@font/montserrat_medium"
@@ -173,7 +201,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/texto_cpf"
-                                android:layout_marginLeft="30dp"
+                                android:layout_marginLeft="70dp"
                                 android:layout_marginTop="7dp"
                                 android:fontFamily="@font/montserrat_medium"
                                 android:text="399.295.618/03"
@@ -192,12 +220,21 @@
                             android:layout_below="@+id/cpf"
                             android:layout_marginTop="30dp">
 
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btnphone"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/ic_iconmonstr_phone_8"
+                                android:backgroundTint="@color/black" />
 
                             <TextView
                                 android:id="@+id/texto_phone"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="30dp"
+                                android:layout_marginLeft="70dp"
                                 android:drawablePadding="5dp"
                                 android:drawableTint="@color/black"
                                 android:fontFamily="@font/montserrat_medium"
@@ -209,7 +246,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/texto_phone"
-                                android:layout_marginLeft="30dp"
+                                android:layout_marginLeft="70dp"
                                 android:layout_marginTop="7dp"
                                 android:fontFamily="@font/montserrat_medium"
                                 android:text="(11) 99457-3560"
@@ -241,7 +278,7 @@
                     android:layout_marginRight="28dp"
                     android:layout_marginBottom="9dp"
                     android:background="@drawable/ic_outline_edit_24"
-                    android:backgroundTint="@color/white"/>
+                    android:backgroundTint="@color/white" />
 
 
 

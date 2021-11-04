@@ -23,4 +23,5 @@
     <color name="light_blue_A400">#FF00B0FF</color>
     <color name="black_overlay">#C0C0C0</color>
     <color name="darkred">#8B0000</color>
+    <color name="red">#FF0000</color>
 </resources>

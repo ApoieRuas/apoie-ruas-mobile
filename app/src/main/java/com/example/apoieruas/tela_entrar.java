@@ -1,5 +1,6 @@
 package com.example.apoieruas;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -38,7 +39,15 @@ public class tela_entrar extends AppCompatActivity {
         viewPager.setAdapter(adapter);
 
         tabLayout.setupWithViewPager(viewPager);
+
+        getWindow().setStatusBarColor(Color.BLACK);
+        getWindow().setNavigationBarColor(Color.BLACK);
     }
+
+    @Override
+    public void onBackPressed() {
+    }
+
 
     private class MainAdapter  extends FragmentPagerAdapter {
 

@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".item_screen"
+    tools:ignore="MissingDefaultResource">
+
+    <include
+        layout="@layout/toolbar_configs"
+        android:id="@+id/include"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:scrollbarThumbVertical="@null"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="15dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:animateLayoutChanges="true"
+                        android:onClick="expandimg"
+                        app:cardBackgroundColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="110dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:id="@+id/produto1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/black"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Absorvente Padrão"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t1"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="40 Unidades - CAREFREE"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+
+                            <ImageView
+                                android:id="@+id/absorvente"
+                                android:layout_width="wrap_content"
+                                android:layout_height="300dp"
+                                android:layout_below="@+id/desc"
+                                android:scaleType="centerCrop"
+                                android:background="@drawable/produto1"
+                                android:visibility="gone"/>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:animateLayoutChanges="true"
+                        android:onClick="expandimg2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="110dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:id="@+id/produto2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/black"
+                            android:padding="10dp">
+
+
+                            <TextView
+                                android:id="@+id/t2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Aparelho Barbeador"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/desc2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t2"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="4 Unidades - GILETTE"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+
+                            <ImageView
+                                android:id="@+id/aparelho"
+                                android:layout_width="wrap_content"
+                                android:layout_height="300dp"
+                                android:layout_below="@+id/desc2"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/aparelho_barbear"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/black"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Barraca Camping"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t3"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="01 Unidade - CAMPING"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/black"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Camiseta Simples"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t4"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="01 Unidade - NIKE"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/black"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Chinelo Básico Preto"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t5"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="01 Unidade - HAVAIANAS"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/black"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Cobertores Kit Frio"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t6"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="3 Unidades - JOLITEX"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/black"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Cotonetes Flex"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t7"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="75 Unidades - JOHNSONS"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/black"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Desodorante Básico"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t8"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="01 Unidades - NIVEA"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/black"
+                            android:padding="10dp">
+
+
+
+                            <TextView
+                                android:id="@+id/t9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Fio Dental"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t9"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="01 Unidade - COLGATE"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/black"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Fralda Geríatrica"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t10"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="16 Unidades - COTIDIAN"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/black"
+                            android:padding="10dp">
+
+
+                            <TextView
+                                android:id="@+id/t11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Fralda Infantil"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t11"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="24 Unidades - POMPOM"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/black"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Garrafa de Água 5L"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t12"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="01 Unidade - CRYSTAL"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/black"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Kit Higiênico"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t13"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="01 Unidade - COLGATE"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/black"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Lenço Umedecido"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t14"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="48 Unidades - HUGGIES"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/black"
+                            android:padding="10dp">
+
+
+                            <TextView
+                                android:id="@+id/t15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Papel Higiêncio"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t15"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="10 Unidades - NEVE"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/black"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Protetor Solar"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t16"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="01 Unidades - SUNDOWN"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/black"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Ração de Cachorro"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t17"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="01 Unidade - THREE DOG"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/black"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Sabonete Banho"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t18"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="01 Unidades - PROTEX"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/black"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/t19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="1dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Shampoo Cabelos"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t19"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="01 Unidade - SEDA"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

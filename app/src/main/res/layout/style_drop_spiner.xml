@@ -1,0 +1,13 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text1"
+    style="?attr/spinnerDropDownItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/dropdownListPreferredItemHeight"
+    android:fontFamily="@font/montserrat_medium"
+    android:textColor="@color/black"
+    android:singleLine="true"
+    android:background="@drawable/edit_text2"
+    android:textAlignment="textStart"
+    android:textSize="18sp">
+</TextView>

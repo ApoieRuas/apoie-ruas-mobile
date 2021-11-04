@@ -1,5 +1,6 @@
 package com.example.apoieruas;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -26,6 +27,8 @@ public class mapa_freguesia extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mapa_freguesia);
         getSupportActionBar().hide();
+        getWindow().setStatusBarColor(Color.RED);
+        getWindow().setNavigationBarColor(Color.RED);
         sliderView = findViewById(R.id.image_slider);
 
         SliderAdapter sliderAdapter = new SliderAdapter(images);

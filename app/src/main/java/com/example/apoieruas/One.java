@@ -1,15 +1,18 @@
 package com.example.apoieruas;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link One#newInstance} factory method to
+ * Use the {@link One#-'h} factory method to
  * create an instance of this fragment.
  */
 public class One extends Fragment {
@@ -61,5 +64,23 @@ public class One extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_one1, container, false);
+
+    }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+
+        androidx.appcompat.widget.AppCompatButton Botão_entrar = view.findViewById(R.id.Botão_entrar);
+        Botão_entrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentActivity act = getActivity();
+
+                if (act != null) {
+                    startActivity(new Intent(act, MainActivity.class));
+                    getActivity().finish();
+                }
+            }
+        });
     }
 }
