@@ -145,10 +145,14 @@
                         app:cardBackgroundColor="@color/black"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="110dp"
+                        android:animateLayoutChanges="true"
+                        android:onClick="expandimg3"
                         app:cardCornerRadius="15dp">
 
                         <RelativeLayout
+                            android:id="@+id/produto3"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/black"
@@ -168,6 +172,7 @@
 
 
                             <TextView
+                                android:id="@+id/desc3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/t3"
@@ -177,6 +182,16 @@
                                 android:text="01 Unidade - CAMPING"
                                 android:textColor="@color/white"
                                 android:textSize="20dp" />
+
+                            <ImageView
+                                android:id="@+id/barraca"
+                                android:layout_width="wrap_content"
+                                android:layout_height="300dp"
+                                android:layout_below="@+id/desc3"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/barraca_acampamento"
+                                android:visibility="gone" />
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -185,10 +200,12 @@
                         app:cardBackgroundColor="@color/black"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="110dp" android:animateLayoutChanges="true" android:onClick="expandimg4"
                         app:cardCornerRadius="15dp">
 
                         <RelativeLayout
+                            android:id="@+id/produto4"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/black"
@@ -208,6 +225,7 @@
 
 
                             <TextView
+                                android:id="@+id/desc4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/t4"
@@ -217,6 +235,16 @@
                                 android:text="01 Unidade - NIKE"
                                 android:textColor="@color/white"
                                 android:textSize="20dp" />
+
+                            <ImageView
+                                android:id="@+id/camisa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="300dp"
+                                android:layout_below="@+id/desc4"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/camisa_preta"
+                                android:visibility="gone" />
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -225,10 +253,12 @@
                         app:cardBackgroundColor="@color/black"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="110dp" android:animateLayoutChanges="true" android:onClick="expandimgchinelo"
                         app:cardCornerRadius="15dp">
 
                         <RelativeLayout
+                            android:id="@+id/produto5"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/black"
@@ -248,6 +278,7 @@
 
 
                             <TextView
+                                android:id="@+id/desc5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/t5"
@@ -257,6 +288,16 @@
                                 android:text="01 Unidade - HAVAIANAS"
                                 android:textColor="@color/white"
                                 android:textSize="20dp" />
+
+                            <ImageView
+                                android:id="@+id/chinelo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="300dp"
+                                android:layout_below="@+id/desc5"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/chinelo_preto"
+                                android:visibility="gone" />
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -265,10 +306,12 @@
                         app:cardBackgroundColor="@color/black"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="110dp" android:animateLayoutChanges="true" android:onClick="expandimg5"
                         app:cardCornerRadius="15dp">
 
                         <RelativeLayout
+                            android:id="@+id/produto6"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/black"
@@ -288,6 +331,7 @@
 
 
                             <TextView
+                                android:id="@+id/desc6"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/t6"
@@ -297,6 +341,16 @@
                                 android:text="3 Unidades - JOLITEX"
                                 android:textColor="@color/white"
                                 android:textSize="20dp" />
+
+                            <ImageView
+                                android:id="@+id/cobertor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="300dp"
+                                android:layout_below="@+id/desc6"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/cobertores"
+                                android:visibility="gone" />
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -305,10 +359,12 @@
                         app:cardBackgroundColor="@color/black"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="110dp" android:animateLayoutChanges="true" android:onClick="expandimg6"
                         app:cardCornerRadius="15dp">
 
                         <RelativeLayout
+                            android:id="@+id/produto7"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/black"
@@ -328,6 +384,7 @@
 
 
                             <TextView
+                                android:id="@+id/desc7"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/t7"
@@ -337,6 +394,16 @@
                                 android:text="75 Unidades - JOHNSONS"
                                 android:textColor="@color/white"
                                 android:textSize="20dp" />
+
+                            <ImageView
+                                android:id="@+id/cotonetes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="300dp"
+                                android:layout_below="@+id/desc7"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/cotonetes"
+                                android:visibility="gone" />
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -345,10 +412,12 @@
                         app:cardBackgroundColor="@color/black"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="110dp" android:animateLayoutChanges="true" android:onClick="expandimg7"
                         app:cardCornerRadius="15dp">
 
                         <RelativeLayout
+                            android:id="@+id/produto8"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/black"
@@ -368,6 +437,7 @@
 
 
                             <TextView
+                                android:id="@+id/desc8"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/t8"
@@ -377,6 +447,17 @@
                                 android:text="01 Unidades - NIVEA"
                                 android:textColor="@color/white"
                                 android:textSize="20dp" />
+
+                            <ImageView
+                                android:id="@+id/desodorante"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="150dp"
+                                android:layout_height="300dp"
+                                android:layout_below="@+id/desc8"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/desadorante"
+                                android:visibility="gone" />
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -385,15 +466,16 @@
                         app:cardBackgroundColor="@color/black"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="110dp" android:animateLayoutChanges="true" android:onClick="expandimg8"
                         app:cardCornerRadius="15dp">
 
                         <RelativeLayout
+                            android:id="@+id/produto9"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/black"
                             android:padding="10dp">
-
 
 
                             <TextView
@@ -410,6 +492,7 @@
 
 
                             <TextView
+                                android:id="@+id/desc9"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/t9"
@@ -419,6 +502,17 @@
                                 android:text="01 Unidade - COLGATE"
                                 android:textColor="@color/white"
                                 android:textSize="20dp" />
+
+                            <ImageView
+                                android:id="@+id/fiodental"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="350dp"
+                                android:layout_below="@+id/desc9"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/fio_dental"
+                                android:visibility="gone" />
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -427,10 +521,12 @@
                         app:cardBackgroundColor="@color/black"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="110dp" android:animateLayoutChanges="true" android:onClick="expandimg9"
                         app:cardCornerRadius="15dp">
 
                         <RelativeLayout
+                            android:id="@+id/produto10"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/black"
@@ -450,6 +546,7 @@
 
 
                             <TextView
+                                android:id="@+id/desc10"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/t10"
@@ -459,6 +556,17 @@
                                 android:text="16 Unidades - COTIDIAN"
                                 android:textColor="@color/white"
                                 android:textSize="20dp" />
+
+                            <ImageView
+                                android:id="@+id/fraldageriatrica"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="300dp"
+                                android:layout_below="@+id/desc10"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/fralda_adulto"
+                                android:visibility="gone" />
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -467,10 +575,12 @@
                         app:cardBackgroundColor="@color/black"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="110dp" android:animateLayoutChanges="true" android:onClick="expandimg10"
                         app:cardCornerRadius="15dp">
 
                         <RelativeLayout
+                            android:id="@+id/produto11"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/black"
@@ -491,6 +601,7 @@
 
 
                             <TextView
+                                android:id="@+id/desc11"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/t11"
@@ -500,6 +611,17 @@
                                 android:text="24 Unidades - POMPOM"
                                 android:textColor="@color/white"
                                 android:textSize="20dp" />
+
+                            <ImageView
+                                android:id="@+id/fraldainfantil"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="300dp"
+                                android:layout_below="@+id/desc11"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/fralda_bebe"
+                                android:visibility="gone" />
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -508,10 +630,12 @@
                         app:cardBackgroundColor="@color/black"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="110dp" android:animateLayoutChanges="true" android:onClick="expandimg12"
                         app:cardCornerRadius="15dp">
 
                         <RelativeLayout
+                            android:id="@+id/produto12"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/black"
@@ -531,6 +655,7 @@
 
 
                             <TextView
+                                android:id="@+id/desc12"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/t12"
@@ -540,6 +665,17 @@
                                 android:text="01 Unidade - CRYSTAL"
                                 android:textColor="@color/white"
                                 android:textSize="20dp" />
+
+                            <ImageView
+                                android:id="@+id/garrafa"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="350dp"
+                                android:layout_below="@+id/desc12"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/galao_agua"
+                                android:visibility="gone" />
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -548,10 +684,12 @@
                         app:cardBackgroundColor="@color/black"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="110dp" android:animateLayoutChanges="true" android:onClick="expandimg13"
                         app:cardCornerRadius="15dp">
 
                         <RelativeLayout
+                            android:id="@+id/produto13"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/black"
@@ -571,6 +709,7 @@
 
 
                             <TextView
+                                android:id="@+id/desc13"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/t13"
@@ -580,6 +719,17 @@
                                 android:text="01 Unidade - COLGATE"
                                 android:textColor="@color/white"
                                 android:textSize="20dp" />
+
+                            <ImageView
+                                android:id="@+id/kit"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="300dp"
+                                android:layout_below="@+id/desc13"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/kit"
+                                android:visibility="gone" />
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -588,10 +738,12 @@
                         app:cardBackgroundColor="@color/black"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="110dp" android:animateLayoutChanges="true" android:onClick="expandimg14"
                         app:cardCornerRadius="15dp">
 
                         <RelativeLayout
+                            android:id="@+id/produto14"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/black"
@@ -611,6 +763,7 @@
 
 
                             <TextView
+                                android:id="@+id/desc14"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/t14"
@@ -620,6 +773,17 @@
                                 android:text="48 Unidades - HUGGIES"
                                 android:textColor="@color/white"
                                 android:textSize="20dp" />
+
+                            <ImageView
+                                android:id="@+id/lenco"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="300dp"
+                                android:layout_below="@+id/desc14"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/lenco_umidecido"
+                                android:visibility="gone" />
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -628,10 +792,12 @@
                         app:cardBackgroundColor="@color/black"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="110dp" android:animateLayoutChanges="true" android:onClick="expandimg15"
                         app:cardCornerRadius="15dp">
 
                         <RelativeLayout
+                            android:id="@+id/produto15"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/black"
@@ -652,6 +818,7 @@
 
 
                             <TextView
+                                android:id="@+id/desc15"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/t15"
@@ -661,6 +828,17 @@
                                 android:text="10 Unidades - NEVE"
                                 android:textColor="@color/white"
                                 android:textSize="20dp" />
+
+                            <ImageView
+                                android:id="@+id/papel"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="300dp"
+                                android:layout_below="@+id/desc15"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/papel_higienico"
+                                android:visibility="gone" />
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -669,10 +847,12 @@
                         app:cardBackgroundColor="@color/black"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="110dp" android:animateLayoutChanges="true" android:onClick="expandimg16"
                         app:cardCornerRadius="15dp">
 
                         <RelativeLayout
+                            android:id="@+id/produto16"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/black"
@@ -692,6 +872,7 @@
 
 
                             <TextView
+                                android:id="@+id/desc16"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/t16"
@@ -701,6 +882,17 @@
                                 android:text="01 Unidades - SUNDOWN"
                                 android:textColor="@color/white"
                                 android:textSize="20dp" />
+
+                            <ImageView
+                                android:id="@+id/protetor"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="350dp"
+                                android:layout_below="@+id/desc16"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/protetor_solar"
+                                android:visibility="gone" />
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -709,10 +901,12 @@
                         app:cardBackgroundColor="@color/black"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="110dp" android:animateLayoutChanges="true" android:onClick="expandimg17"
                         app:cardCornerRadius="15dp">
 
                         <RelativeLayout
+                            android:id="@+id/produto17"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/black"
@@ -732,6 +926,7 @@
 
 
                             <TextView
+                                android:id="@+id/desc17"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/t17"
@@ -741,6 +936,17 @@
                                 android:text="01 Unidade - THREE DOG"
                                 android:textColor="@color/white"
                                 android:textSize="20dp" />
+
+                            <ImageView
+                                android:id="@+id/racao"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="300dp"
+                                android:layout_below="@+id/desc17"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/racao"
+                                android:visibility="gone" />
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -749,10 +955,12 @@
                         app:cardBackgroundColor="@color/black"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="110dp" android:animateLayoutChanges="true" android:onClick="expandimg18"
                         app:cardCornerRadius="15dp">
 
                         <RelativeLayout
+                            android:id="@+id/produto18"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/black"
@@ -772,6 +980,7 @@
 
 
                             <TextView
+                                android:id="@+id/desc18"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/t18"
@@ -781,6 +990,17 @@
                                 android:text="01 Unidades - PROTEX"
                                 android:textColor="@color/white"
                                 android:textSize="20dp" />
+
+                            <ImageView
+                                android:id="@+id/sabonete"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="300dp"
+                                android:layout_below="@+id/desc18"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/sabonete"
+                                android:visibility="gone" />
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -789,10 +1009,13 @@
                         app:cardBackgroundColor="@color/black"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="100dp"
+                        android:minHeight="110dp" android:animateLayoutChanges="true" android:onClick="expandimg19"
                         app:cardCornerRadius="15dp">
 
                         <RelativeLayout
+                            android:id="@+id/produto19"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/black"
@@ -812,6 +1035,7 @@
 
 
                             <TextView
+                                android:id="@+id/desc19"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/t19"
@@ -821,6 +1045,17 @@
                                 android:text="01 Unidade - SEDA"
                                 android:textColor="@color/white"
                                 android:textSize="20dp" />
+
+                            <ImageView
+                                android:id="@+id/shampoo"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="350dp"
+                                android:layout_below="@+id/desc19"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/shampoo2"
+                                android:visibility="gone" />
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView>
